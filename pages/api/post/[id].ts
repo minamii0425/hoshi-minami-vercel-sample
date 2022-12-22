@@ -16,10 +16,3 @@ export default async function handle(req, res) {
     );
   }
 }
-
-async function deletePost(id: string): Promise<void> {
-  await fetch(`/api/post/${id}`, {
-    method: "DELETE",
-  });
-  Router.push("/");
-}
